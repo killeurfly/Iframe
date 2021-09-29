@@ -1,0 +1,72 @@
+body,html 
+
+{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.c1
+{
+
+	text-align: right;
+	margin: auto;
+  margin: 10px 50px 30px 400px;
+
+}
+
+.c2
+{
+	margin: 10px 50px 30px 400px;
+	border: 2px solid black;
+	border-radius: 30px;
+	padding: 12px
+
+}
+
+.c3
+{
+
+  text-align: right;
+
+}
+
+a
+
+{
+
+	font-size: 1rem;
+	text-align: center;
+	display: block;
+
+}
+
+ul 
+{
+  padding: 0;
+  width: 100%;
+}
+
+li 
+{
+  display: block;
+}
+
+a 
+
+{
+  outline: none;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  color: white;
+  background: indianred;
+}
+
+
+a:hover 
+
+{
+  background: lightgreen;
+}
