@@ -1,6 +1,9 @@
 body,html 
 
 {
+background:url(fond.jpg);
+background-repeat: no-repeat;
+background-size:cover;
   margin: 0;
   font-family: sans-serif;
 }
