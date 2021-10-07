@@ -8,83 +8,226 @@ background-size: cover;
   font-family: sans-serif;
 }
 
-.c1
+body
 {
-font-size: 3.5em
-
+  font-family: Verdana, Calibri, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
-.c2
+nav > ul
 {
-	margin: 10px 0px 30px 200px;
-	border: 2px solid yellow;
-	border-radius: 30px;
-	padding: 5px;
-
+  margin: 0px;
+  padding: 0px;
 }
 
-.c3
+nav li
 {
-
-  text-align: right;
-
+  list-style-type: none;
 }
 
-a
-
+nav > ul > li 
 {
-
-	font-size: 1rem;
-	text-align: center;
-	display: block;
-
+  float: left;
+  position: relative;
 }
 
-.c5 
+.submenu
 {
-  padding: 0;
+  display: none;
+}
+
+nav input[type=checkbox]
+{
+  display: none;
+} 
+
+.menu-mobile
+{
+  display: none;
+}
+
+nav
+{
   width: 100%;
+  background-color: #424558;
 }
 
-.c6
+nav > ul >li 
 {
-  display: block;
+  float: left;
+  position: relative;
 }
 
-.c7
-
+nav > ul::after
 {
-  outline: none;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a 
+{
+  display: inline-block;
   text-decoration: none;
-  display: block;
-  width: 100%;
-  text-align: center;
-  line-height: 2;
-  color: white;
-  background: indianred;
+}
+
+nav > ul > li > a 
+{
+  padding: 20px 30px;
+  color: #FFF;
 }
 
 
-.c7:hover 
-
+nav li:hover .submenu
 {
-    background: lightgreen;
-
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 100000;
 }
 
-h1
+.submenu li 
 {
-color: white;
-
+border-bottom: 1px solid #CCC;
 }
 
-h2
+.submenu li a 
 {
-color: white;
-
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
 }
 
-.c4
+.menu-site1:hover
 {
-padding-left: -150px;
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-site2:hover
+{
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-site3:hover
+{
+  border-top: 5px solid #f1dc4f;
+  background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-site4:hover
+{
+  border-top: 5px solid #BBB;
+  background-color: rgba(57, 189, 91, 0.15);
+}
+
+.menu-site5:hover
+{
+  border-top: 5px solid #BBB;
+  background-color: rgba(120, 0, 107, 0.15);
+}
+
+nav > ul > li:hover a 
+{
+padding: 15px 30px 20px 30px;
+}
+
+.menu-site1 .submenu
+{
+  background-color: rgb(230, 100, 40);
+}
+
+.menu-site2 .submenu
+{
+  background-color: rgb(000, 160, 240);
+}
+
+.menu-site3 .submenu
+{
+  background-color: rgb(251, 216, 99);
+}
+
+.menu-site4 .submenu
+{
+  background-color: rgb(57, 190, 91);
+}
+
+.menu-site5 .submenu
+{
+  background-color: rgb(120, 0, 107);
+}
+
+.submenu li:hover a 
+{
+  color: #EEE;
+  font-weight: bold;
+}
+
+.menu-site1 .submenu li:hover
+{
+  background-color: rgb(210, 77, 60);
+}
+
+.menu-site2 .submenu li:hover
+{
+  background-color: rgb(000, 115, 200);
+}
+
+.menu-site3 .submenu li:hover
+{
+  background-color: rgb(200, 165, 75);
+}
+
+.menu-site4 .submenu
+{
+  background-color: rgb(57, 190, 91);
+}
+
+.menu-site5 .submenu
+{
+  background-color: rgb(120, 0, 107);
+}
+
+nav input[type=checkbox]:checked ~ ul
+{
+display: block;
+}
+
+@media screen and (max-width : 680px)
+{
+  .menu-mobile
+  {
+    display: block;
+    color: #fff;
+    background-color:rgba(29, 197, 151, 0.97);
+    text-align: center;
+    padding: 12px 0;
+  }
+  nav ul
+  {
+    display: none;
+  }
+
+  nav ul li, nav ul li a 
+  {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a , nav ul li:hover a 
+  {
+    padding: 10px 0px 10px 0px;
+  }
+
+  nav li:hover .submenu
+  {
+    display: block;
+    position: static;
+  }
+
 }
