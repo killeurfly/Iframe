@@ -65,10 +65,11 @@ a
 }
 
 
-a:hover 
+.c7:hover 
 
 {
-  background: lightgreen;
+    background: lightgreen;
+
 }
 
 h1
@@ -85,5 +86,5 @@ color: white;
 
 .c4
 {
-padding-left: -50px;
+padding-left: -150px;
 }
