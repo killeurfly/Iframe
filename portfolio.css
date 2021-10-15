@@ -1,0 +1,269 @@
+
+h2
+{
+	color: red;
+}
+
+
+h3
+{
+	color: blue;
+}
+
+.color
+{
+color: #FFF
+}
+
+.fond
+
+{
+background: url(fond.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+.p1
+{
+	background-color: white;
+}
+.page
+{
+width: 95%;
+height:850px;
+border: 3px solid black;
+font-size: 16px;
+font-family: verdana;
+padding: 10px;
+box-shadow: 2px 4px 3px black;
+
+}
+
+.entete
+{
+width: 97.5%;
+border: 2px solid indianred;
+border-radius: 50px;
+height: 150px;
+margin-right: 50%;
+padding: 5px;
+text-align: center;
+}
+
+.info
+{
+width: 40%;
+border: 3px solid green;
+float: left;
+background-color:#dddddd;
+
+}
+
+.img
+{
+
+border: 1px solid;	
+float: right;
+
+}
+
+.form
+{
+border: 3px;
+height: 510px;
+padding: 5px;
+
+}
+
+.left
+{
+float: left;
+border: 2px solid;
+width: 200px;
+height: 500px;
+}
+
+.right
+{
+float: right;
+width: 70%;
+border: 1px solid;
+height: 500px;
+
+}
+
+.txt
+{
+margin: 50px 30px -450px 30px;
+height: 400px;
+width: 700px;
+border:3px solid red;
+border-radius: 35px;
+overflow: auto;
+}
+
+nav > ul
+{
+margin: 0px;
+padding: 0px;
+}
+
+nav li
+{
+list-style-type: none;
+margin: auto;
+text-align: center;
+}
+
+.submenu
+{
+display: none;
+}
+
+nav > ul >li 
+{
+	float: left;
+	position: relative;
+}
+
+nav > ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+nav a 
+{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav li:hover .submenu
+{
+	display: inline-block;
+	position: relative;
+	top: 10%;
+	left: 100%;
+	padding: 0px;
+	z-index: 100000;
+	border: 1px solid black;
+	box-shadow: 2px 3px black;
+
+}
+
+li
+{
+	border: 1px solid black;
+	box-shadow: 2px 3px black;
+	margin: 10px 10px;
+	background-color: #6a89f7;
+}
+
+.submenu li 
+{
+border-bottom: 1px solid #CCC;
+}
+
+.submenu li a 
+{
+	padding: 15px 30px;
+	font-size: 13px;
+
+	width: 270px;
+}
+
+.menu-accueil:hover
+{
+	border-top: 5px solid #e44d26;
+	background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-CV:hover
+{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-projets:hover
+{
+	border-top: 5px solid #f1dc4f;
+	background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-veilles:hover
+{
+	border-top: 5px solid #00ffff;
+	background-color: rgba(0, 255, 255, 0.15);
+}
+
+.menu-contact:hover
+{
+	border-top: 5px solid #CE289C;
+	background-color: rgba(150, 20, 160, 0.15);
+}
+
+nav > ul > li:hover a 
+{
+padding: 15px 30px 20px 30px;
+}
+
+.menu-accueil .submenu
+{
+	background-color: rgb(230, 100, 40);
+}
+
+.menu-CV .submenu
+{
+	background-color: rgb(000, 160, 240);
+}
+
+.menu-projets .submenu
+{
+	background-color: rgb(251, 216, 99);
+}
+
+.menu-veilles .submenu
+{
+	background-color: rgb(0, 255, 255);
+}
+
+.menu-contact .submenu
+{
+	background-color: rgb(150, 20, 160);
+}
+
+.submenu li:hover a 
+{
+	color: #EEE;
+	font-weight: bold;
+}
+
+
+.menu-accueil .submenu li:hover
+{
+	background-color: rgb(210, 77, 60);
+}
+
+.menu-CV .submenu li:hover
+{
+	background-color: rgb(000, 115, 200);
+}
+
+.menu-projets .submenu li:hover
+{
+	background-color: rgb(200, 165, 75);
+}
+
+.menu-veilles .submenu li:hover
+{
+	background-color: rgb(200, 165, 75);
+}
+
+.menu-contact .submenu li:hover
+{
+	background-color: rgb(200, 165, 75);
+}
+
+
+

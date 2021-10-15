@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+	var note1= prompt("Donnez une première note");
+	var note2= prompt("Donnez une deuxième note");
+	var note3= prompt("Donnez une troisième note");
+
+	var somme=note1*2 +note2*2 +note3*3;
+	var moyenne= somme / 7;
+
+	if(moyenne>=10)
+		{
+		document.write("Eleve admis");
+		document.bgColor ="green";
+		}
+
+	else if(moyenne>=8)
+		{
+		document.write("Eleve au ratrapage");
+		document.bgColor ="orange";
+		}
+
+	else
+		{
+		document.write("Eleve recalé");
+		document.bgColor ="red";
+		}
+
+	document.write("<table border=2><tr>");
+	document.write("<td>voila la somme: " + somme + "<br></td>");
+	document.write("<td>voila la moyenne: " + moyenne + "</td>");
+	document.write("</tr></table>");
+</script>
+</body>
+</html>

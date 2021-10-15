@@ -1,0 +1,64 @@
+
+body,html 
+
+{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.c1
+{
+
+	text-align: center;
+	margin: auto;
+
+}
+
+.c2
+{
+	margin: auto;
+	border: 2px solid red;
+	border-radius: 10px;
+	padding: 120px
+
+}
+
+a
+
+{
+
+	font-size: 2rem;
+	text-align: center;
+	display: block;
+
+}
+
+ul 
+{
+  padding: 0;
+  width: 100%;
+}
+
+li 
+{
+  display: inline;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 3;
+  color: white;
+  background: blue;
+}
+
+
+a:hover 
+
+{
+  background: lightgreen;
+}
+
