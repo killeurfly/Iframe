@@ -1,0 +1,33 @@
+table
+{
+	border: 3px solid #6495ed;
+	margin: auto;
+}
+
+td
+{
+	border: 1px solid #000099;
+	text-align: center;
+	font-size: 3em;
+}
+
+.c1
+{
+	background-image: url('im1.png');
+	background-size: cover;
+	
+}
+
+.c2
+{
+	background-image: url('im2.png');
+	background-size: cover;
+	
+}
+
+.c3
+{
+	text-align: center;
+
+
+}
