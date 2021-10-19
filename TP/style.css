@@ -138,6 +138,12 @@ border-bottom: 1px solid #CCC;
   background-color: rgba(120, 207, 190, 0.15);
 }
 
+.menu-site7:hover
+{
+  border-top: 5px solid #FF0000;
+  background-color: rgba(255, 0, 0, 0.15);
+}
+
 nav > ul > li:hover a 
 {
 padding: 15px 30px 20px 30px;
@@ -173,6 +179,12 @@ padding: 15px 30px 20px 30px;
   background-color: rgb(120, 207, 190);
 }
 
+.menu-site7 .submenu
+{
+  background-color: rgb(255, 0, 0);
+}
+
+
 .submenu li:hover a 
 {
   color: #EEE;
@@ -207,6 +219,11 @@ padding: 15px 30px 20px 30px;
 .menu-site6 .submenu li:hover
 {
   background-color: rgb(120, 207, 190);
+}
+
+.menu-site7 .submenu li:hover
+{
+  background-color: rgb(255, 0, 0);
 }
 
 nav input[type=checkbox]:checked ~ ul
