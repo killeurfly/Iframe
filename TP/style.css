@@ -1,9 +1,9 @@
 body,html 
 
 {
-background: url(fond.jpg);
-background-repeat: no-repeat;
-background-size: cover;
+  background: url(fond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   font-family: sans-serif;
 }
@@ -140,16 +140,9 @@ border-bottom: 1px solid #CCC;
 
 .menu-site7:hover
 {
-  border-top: 5px solid #FF0000;
-  background-color: rgba(255, 0, 0, 0.15);
+  border-top: 5px solid #78CFBE;
+  background-color: rgba(0, 101, 80, 0.15)
 }
-
-.menu-site8:hover
-{
-  border-top: 5px solid #00D8FF;
-  background-color: rgba(0, 216, 255, 0.15);
-}
-
 
 nav > ul > li:hover a 
 {
@@ -188,14 +181,8 @@ padding: 15px 30px 20px 30px;
 
 .menu-site7 .submenu
 {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 101, 80);
 }
-
-.menu-site8 .submenu
-{
-  background-color: rgb(0, 216, 255);
-}
-
 
 .submenu li:hover a 
 {
@@ -235,12 +222,7 @@ padding: 15px 30px 20px 30px;
 
 .menu-site7 .submenu li:hover
 {
-  background-color: rgb(255, 0, 0);
-}
-
-.menu-site8 .submenu li:hover
-{
-  background-color: rgb(0, 216, 255);
+  background-color: rgb(0, 101, 80);
 }
 
 nav input[type=checkbox]:checked ~ ul

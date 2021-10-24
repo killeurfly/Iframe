@@ -116,6 +116,12 @@ border-bottom: 1px solid #CCC;
 	background-color: rgba(220, 220, 220, 0.15);
 }
 
+.menu-code:hover
+{
+	border-top: 5px solid #BBB;
+	background-color: rgba(220, 220, 220, 0.15);
+}
+
 nav > ul > li:hover a 
 {
 padding: 15px 30px 20px 30px;
@@ -132,6 +138,11 @@ padding: 15px 30px 20px 30px;
 }
 
 .menu-js .submenu
+{
+	background-color: rgb(251, 216, 99);
+}
+
+.menu-code .submenu
 {
 	background-color: rgb(251, 216, 99);
 }
@@ -153,6 +164,11 @@ padding: 15px 30px 20px 30px;
 }
 
 .menu-js .submenu li:hover
+{
+	background-color: rgb(200, 165, 75);
+}
+
+.menu-code .submenu li:hover
 {
 	background-color: rgb(200, 165, 75);
 }
@@ -194,4 +210,9 @@ display: block;
 		position: static;
 	}
 
+}
+
+.border-top
+{
+	color: red;
 }
