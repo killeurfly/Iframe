@@ -2,7 +2,7 @@ body,html
 
 {
   background: url(fond.jpg);
-  background-repeat: no-repeat;
+  background-repeat: vertical;
   background-size: cover;
   margin: 0;
   font-family: sans-serif;
