@@ -127,12 +127,12 @@ where `nom_prenom` like "a%"
 
 19)
 
-INSERT INTO `voiture` (`immatriculation`, `marque`, `modèle`, `kilometrage`, `carburant`, `couleur`, `nb_place`, `nb_portes`, `etat`) VALUES
-('18 etf 65', 'suzuki', 'swift modele 3', 3858, 'essence', 'bleu', 5, 5, 'bon'),
-('22 TU 2000', 'mercedes', 'AMG', 20000, 'essence', 'noir', 5, 5, 'bon etat'),
-('AC 666 DC', 'tesla', 'cybertruck', 42, 'electrique', 'chrome', 5, 4, 'parfait'),
-('BT 264 JS', 'renault', 'megane', 16500, 'essence', 'vert', 5, 5, 'bon'),
-('R1 CH35 53', 'rolls royce', 'phantom', 150, 'essence', 'gris metalise', 5, 5, 'parfait');
+INSERT INTO `voiture` (`immatriculation`, `marque`, `modèle`, `kilometrage`, `carburant`, `couleur`, `nb_place`, `nb_portes`, `etat`,`prix`) VALUES
+('18 etf 65', 'suzuki', 'swift modele 3', 3858, 'essence', 'bleu', 5, 5, 'bon',`4000`),
+('22 TU 2000', 'mercedes', 'AMG', 20000, 'essence', 'noir', 5, 5, 'bon etat',`15000`),
+('AC 666 DC', 'tesla', 'cybertruck', 42, 'electrique', 'chrome', 5, 4, 'parfait',`70000`),
+('BT 264 JS', 'renault', 'megane', 16500, 'essence', 'vert', 5, 5, 'bon',`10000`),
+('R1 CH35 53', 'rolls royce', 'phantom', 150, 'essence', 'gris metalise', 5, 5, 'parfait',`300000`);
 
 20)
 
