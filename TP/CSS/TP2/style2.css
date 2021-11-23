@@ -1,0 +1,28 @@
+.c1
+{
+	border: 2px solid red;
+	border-radius: 10px;
+	padding: 20px
+
+}
+
+.c2
+{
+	background-color: lightgreen;
+	border: 2px solid blue;
+	border-radius: 10px;
+}
+
+.c3
+{
+margin: 8px 1.5% 15px 1.5%;
+padding: 15px
+
+}
+
+.c4
+{
+
+	margin: 8px 1.5% 15px 1.5%
+
+}
