@@ -1,0 +1,246 @@
+
+
+CREATE TABLE `reparation` 
+(
+  `num_reparation` int(11) NOT NULL,
+
+   `date_reparation` date DEFAULT NULL,
+  
+   `duree_reparation` varchar(30) DEFAULT NULL,
+  
+   `cout_reparation` varchar(30) DEFAULT NULL,
+  
+   `responsable_reparation` varchar(30) DEFAULT NULL,
+  
+   `immatrucalation` varchar(30) DEFAULT NULL,
+ 
+) 
+    
+Requete php:
+
+1)
+
+SELECT * 
+FROM `voiture`
+2)
+
+Select*
+From `voiture`
+Order by `immatriculation`
+3)
+
+SELECT * 
+FROM `voiture` 
+ORDER BY `marque` , `modèle`
+
+4)
+
+SELECT * 
+FROM `voiture` 
+WHERE marque = "tesla"
+
+5)
+
+SELECT LOWER(`marque`),LOWER(`modèle`) 
+FROM `voiture` 
+WHERE marque = "tesla"
+
+6)
+
+SELECT UPPER( `marque` ) , UPPER( `modèle` ) 
+FROM `voiture` 
+WHERE marque = "tesla"
+
+7)
+
+ALTER TABLE voiture
+ADD prix_achat INT
+
+8)
+
+Select*
+From voiture
+Where prix_achat<20000 and prix_achat>15000
+
+Select*
+From voiture
+Where prix_achat between 20000 and 15000
+
+9)
+
+Select AVG(`kilometrage`)
+From `voiture`
+Where `marque`="mercedes"
+
+10)
+
+Select count(*)
+From `voiture`
+Where `marque`="tesla"
+
+11)
+
+Select count(*)
+From `voiture`
+Where `couleur`="noire"
+
+12)
+
+SELECT `marque`, count(*)
+From `voiture`
+GROUPE by `marque`
+
+13)
+
+SELECT MAX(`kilometrage`)
+From `voiture`
+
+14)
+
+SELECT `marque`,`modèle`,`immatriculation`
+From `voiture`
+where `kilometrage`= (SELECT MAX(`kilometrage`)From `voiture`)
+
+15)
+
+SELECT `marque`,`modèle`,`immatriculation`
+From `voiture`
+where `kilometrage`= (SELECT MIN(`kilometrage`)From `voiture`)
+
+16)
+
+SELECT *
+From `client`
+where `ville`= "paris" or "nice"
+
+17)
+
+SELECT SUM(`prix_achat`)
+From `voiture`
+where `marque`= "mercedes"
+
+18)
+
+SELECT `code_client`,`ville`
+From `client`
+where `nom_prenom` like "a%"
+
+19)
+
+INSERT INTO `voiture` (`immatriculation`, `marque`, `modèle`, `kilometrage`, `carburant`, `couleur`, `nb_place`, `nb_portes`, `etat`) VALUES
+('18 etf 65', 'suzuki', 'swift modele 3', 3858, 'essence', 'bleu', 5, 5, 'bon'),
+('22 TU 2000', 'mercedes', 'AMG', 20000, 'essence', 'noir', 5, 5, 'bon etat'),
+('AC 666 DC', 'tesla', 'cybertruck', 42, 'electrique', 'chrome', 5, 4, 'parfait'),
+('BT 264 JS', 'renault', 'megane', 16500, 'essence', 'vert', 5, 5, 'bon'),
+('R1 CH35 53', 'rolls royce', 'phantom', 150, 'essence', 'gris metalise', 5, 5, 'parfait');
+
+20)
+
+INSERT INTO `location` (`id_location`, `duree_location`, `date_location`, `prix_location`, `code_client`, `immatriculation`) VALUES
+('LOC205', '5jours', '2021-11-09', '400', 'T200', 'BT 264 JS'),
+('LOC206', '5jours', '2021-11-09', '100', 'T201', '18 etf 65');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
