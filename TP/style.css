@@ -129,7 +129,7 @@ border-bottom: 1px solid #CCC;
 .menu-site5:hover
 {
   border-top: 5px solid #78006B;
-  background-color: rgba(120, 0, 107, 0.15);
+  background-color: rgba(150, 0, 107, 0.15);
 }
 
 .menu-site6:hover
@@ -189,7 +189,7 @@ padding: 15px 30px 20px 30px;
 
 .menu-site5 .submenu
 {
-  background-color: rgb(120, 0, 107);
+  background-color: rgb(150, 0, 107);
 }
 
 .menu-site6 .submenu
@@ -245,7 +245,7 @@ padding: 15px 30px 20px 30px;
 
 .menu-site5 .submenu li:hover
 {
-  background-color: rgb(120, 0, 107);
+  background-color: rgb(150, 0, 107);
 }
 
 .menu-site6 .submenu li:hover
