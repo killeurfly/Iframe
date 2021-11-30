@@ -1,0 +1,99 @@
+1)
+
+	update `voiture`
+	SET `kilometrage` =10000
+
+2)
+
+	update `voiture`
+	SET `prix_achat` =45800
+	where `marque` = "tesla"
+
+3)
+
+
+	update `client`
+	SET `adresse`="21 Avenue de Starsbourg"
+	where `nom_prenom`="Yasmine"
+
+4)
+
+	DELETE
+	FROM voiture
+	where marque=`audi`
+
+5)
+
+	ALTER TABLE clients
+	DROP code_postal
+
+6)
+
+	select marque
+	from voiture
+	where upper(`marque`) like "T%"
+
+	UNION
+
+	select nom_prenom
+	from client
+	where upper(`nom_prenom`)like "C%"
+
+7)
+
+	SELECT V.marque,L.code_client
+	FROM voiture V
+	join location L on (V.immatriculation = L.immatriculation)
+	where `code_client`= "t200"
+
+8)
+
+	SELECT C.adresse,C.nom_prenom
+	FROM client C
+	join location L on (L.code_client = C.code_client)
+	where `immatriculation`= "22 TU 2000"
+
+9)
+
+	SELECT V.immatriculation,V.kilometrage
+	FROM voiture V
+	join location L on (L.immatriculation =V.immatriculation)
+	where `prix_location` < 60
+
+10)
+
+	SELECT V.immatriculation,V.modèle,V.marque
+	FROM voiture V
+	join location L on (L.immatriculation =V.immatriculation)
+	where YEAR(date_location)=2021 and MONTH(date_location)=11
+
+11)
+
+	SELECT C.nom_prenom,C.adresse
+	FROM client C
+	join location L on (L.code_client = C.code_client)
+	join voiture V on (L.immatriculation = V.immatriculation)
+	where marque="tesla"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
