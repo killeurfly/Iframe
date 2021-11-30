@@ -62,7 +62,7 @@
 
 10)
 
-	SELECT V.immatriculation,V.modèle,V.marque
+	SELECT V.immatriculation,V.modÃ¨le,V.marque
 	FROM voiture V
 	join location L on (L.immatriculation =V.immatriculation)
 	where YEAR(date_location)=2021 and MONTH(date_location)=11
