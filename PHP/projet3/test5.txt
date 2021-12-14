@@ -1,0 +1,27 @@
+<?php 
+$a=$_REQUEST['t1'];
+$b=$_REQUEST['t2'];
+$c=$_REQUEST['t3'];
+$d=$_REQUEST['t4'];
+$e=$_REQUEST['t5'];
+
+$moyenne=($a*2+$b*2+$c*2+$d*3+$e*3)/12;
+
+if ($moyenne <7)
+	echo "Refusé";
+if ($moyenne <10)
+	echo "Refusé ou Redoublant";
+if ($moyenne <15)
+	echo "Admis passable";
+else
+	echo "Admis avec mention";
+echo "<br>votre moyenne est : ",$moyenne;
+
+
+
+
+
+
+
+
+?>

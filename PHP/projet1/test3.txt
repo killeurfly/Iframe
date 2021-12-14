@@ -1,0 +1,15 @@
+<?php 
+$a=$_REQUEST['t1'];
+$b=$_REQUEST['t2'];
+echo "Voila la somme ",$a+$b,"<br>";
+echo "Voila la produit ",$a*$b,"<br>";
+echo "Voila la reste ",$a%$b,"<br>";
+echo "Voila la division ",$a/$b,"<br>";
+
+if ($a>$b)
+	echo $a," est plus petit que ",$b;
+else
+	echo $b," est plus grand que ",$a;
+
+
+?>

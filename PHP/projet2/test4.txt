@@ -1,0 +1,15 @@
+<?php 
+$a=$_REQUEST['t1'];
+$b=$_REQUEST['t2'];
+$c=$_REQUEST['t3'];
+
+if ($c == "+")
+echo "La somme est ",$a+$b,"<br>";
+else if ($c == "*")
+echo "Le produit est ",$a*$b,"<br>";
+else if ($c == "%")
+echo "Le reste est ",$a%$b,"<br>";
+else if ($c == "/")
+echo "La division est ",$a/$b,"<br>";
+
+?>

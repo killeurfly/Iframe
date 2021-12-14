@@ -1,0 +1,14 @@
+<html>
+<meta charset="utf-8">
+<body>
+<form action="test5.php" method="get">
+Première note: <input type="text" name="t1"><br>
+Deuxième note: <input type="text" name="t2"><br>
+Troisième note: <input type="text" name="t3"><br>
+Quatrième note: <input type="text" name="t4"><br>
+Cinquième note: <input type="text" name="t5"><br>
+
+<input type="submit" value="Calculer!">
+</form>
+</body>
+</html>
