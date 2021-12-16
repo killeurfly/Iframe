@@ -1,0 +1,184 @@
+
+TABLE A:
+
+
+Liste des employés
+
+	SELECT * 
+	FROM `employe` 
+	WHERE 1 
+
+
+Liste des noms de tous les employés
+
+	SELECT `NomEmp`
+	FROM `employe`
+
+ 
+Nom des employés embauchés à partir du 1er janvier 1999
+
+	SELECT `NomEmp`
+	FROM `employe`
+	WHERE `DateEmb` like "%99"
+
+Liste des employés (Num et Nom) dont le nom commence par la lettre C 
+
+	SELECT `NomEmp`,`NumEmp`
+	FROM `employe`
+	WHERE `NomEmp` like "C%"
+
+Liste des employés triés par ordre décroissant sur les noms
+
+	SELECT *
+	FROM `employe`
+	order by NomEmp DESC
+ 
+Nombre d’employés embauchés chaque année
+
+	SELECT SUBSTR( `DateEmb` , 7, 2 ) as `année`,COUNT( `NumEmp` ) as `nombre`
+	FROM `employe`
+	GROUP BY SUBSTR( `DateEmb` , 7, 2 )
+ 
+Nombre d’employés embauchés chaque année ayant un nom de plus de 5  lettres
+
+	SELECT SUBSTR( `DateEmb` , 7, 2 ) as `année`,COUNT( `NumEmp` ) as `nombre`
+	FROM `employe`
+	where length(`NomEmp`)>5 GROUP BY SUBSTR( `DateEmb` , 7, 2 )
+ 
+Nombre d’employés embauchés chaque année ayant un nom commençant par L ou C, en ne gardant que les années avec au moins deux employés
+
+	SELECT SUBSTR( `DateEmb` , 7, 2 ) AS `année` , COUNT( `NumEmp` ) AS `nombre` 
+	FROM `employe` 
+	WHERE `NomEmp` LIKE "L%"
+	OR `NomEmp` LIKE "C%"
+	GROUP BY SUBSTR( `DateEmb` , 7, 2 ) 
+	HAVING COUNT( `NumEmp` ) >1
+
+
+<---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+TABLE B:
+
+
+Liste de tous les noms de postes 
+
+	SELECT `Poste`
+	FROM `poste`
+	WHERE 1
+
+Postes occupés dont le salaire de l’employé est supérieur ou égal à 3000
+
+	SELECT `Poste`
+	FROM `poste`
+	WHERE `Salaire` >=3000
+
+Postes occupés, triés par ordre décroissant et salaires par ordre croissant
+
+	SELECT `Poste`
+	FROM `poste`
+	WHERE `Salaire` >=3000
+	order by `Poste` DESC, `Salaire` ASC
+
+Salaire le plus bas
+
+	SELECT `Poste` , `Salaire`
+	FROM `poste`
+	WHERE `Salaire` = ( SELECT MIN( `Salaire` ) FROM `poste` ) 
+
+Moyenne des salaires
+
+	SELECT AVG(`Salaire`)
+	FROM `poste`
+
+Moyenne des salaires pour les postes actuellement occupés
+
+	SELECT AVG(`Salaire`)
+	FROM `poste`
+	where `DateFin` != ""
+
+
+Nombre de salariés avec un salaire > 3000
+
+	SELECT COUNT( `NumEmp` ) as `nombre`
+	FROM `poste`
+	where `Salaire` >3000
+
+Moyenne des salaires actuels pour chaque service
+
+	SELECT `NumServ`, AVG(`Salaire`)
+	FROM `poste`
+	where `DateFin` like "" group by `NumServ`
+
+Moyenne des salaires pour chaque poste avec au moins 2 employés
+
+	SELECT AVG(`Salaire`),COUNT( `NumEmp` ) AS `nombre`,`Poste` AS `poste`
+	FROM `poste`
+	GROUP BY `Poste`
+	HAVING COUNT( `NumEmp` ) >1
+
+
+<---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+TABLE C:
+
+
+Moyenne des poids par sexe
+
+	SELECT `SEXE`,AVG(`POIDS`) AS `moyenne`
+	FROM `etudiant`
+	group by `SEXE`
+
+Moyenne des poids par sexe et par tranche d’âge
+
+	SELECT `SEXE` , AVG( `POIDS` ) AS `moyenne` , 2021 - YEAR( `DATENAISSANCE` ) AS `age` 
+	FROM `etudiant` 
+	GROUP BY `SEXE` , `age`
+
+Moyenne des poids par année, par sexe et par tranche d’âge
+
+	SELECT AVG( `POIDS` ) AS `moyenne`,`ANNEE`,`SEXE`,2021 - YEAR( `DATENAISSANCE` ) AS `age`
+	FROM `etudiant` 
+	GROUP BY `ANNEE`,`SEXE`,`age`
+
+Moyenne des poids par sexe, par année et par tranche d’âge
+
+	SELECT AVG( `POIDS` ) AS `moyenne`,`SEXE`,`ANNEE`,2021 - YEAR( `DATENAISSANCE` ) AS `age`
+	FROM `etudiant` 
+	GROUP BY `ANNEE`,`SEXE`,`age`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
